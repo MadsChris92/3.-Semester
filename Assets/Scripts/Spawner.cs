@@ -10,7 +10,6 @@ public class Spawner : MonoBehaviour
 	public GameObject enemy;
 	public int counter = 0;
 	bool isSpawning;
-	// Use this for initialization
 	public p path;
 
 	public enum SpawnPaths
@@ -38,15 +37,17 @@ public class Spawner : MonoBehaviour
 		spawnTime = spawnRate;
 		timePassed += Time.deltaTime;
 		maxCurrentSpawn = amount;
-		//Debug.Log(counter);
+        GameObject clone = Instantiate(enemy, transform.position, Quaternion.identity) as GameObject;
+        clone.GetComponent<FollowPath>().Move(path1);
+        //Debug.Log(counter);
 
-		if (timePassed > spawnTime && counter < maxCurrentSpawn) {
+        /*if (timePassed > spawnTime && counter < maxCurrentSpawn) {
 			GameObject clone = Instantiate (enemy, transform.position, Quaternion.identity) as GameObject;
 			clone.GetComponent<FollowPath> ().Move (path1);
 			counter++;
 			timePassed = 0;
-		} 
-	}
+		} */
+    }
 	
 	public void spawnTwo(p path1, GameObject enemy1, p path2, GameObject enemy2,int amount, float spawnRate){
 		spawnTime = spawnRate;
