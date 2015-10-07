@@ -15,17 +15,14 @@ public class Enemy : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        path = path.GetComponent<FollowPath>();
     bullet = GameObject.FindGameObjectWithTag ("Bullet");
         if (enemyType == EnemyType.basic)
         {
             health = health * 2;
-            path.Speed = 1;
         }
         if(enemyType == EnemyType.moderat)
         {
             health = health * 3;
-            path.Speed = 10;
         }
     }
 	

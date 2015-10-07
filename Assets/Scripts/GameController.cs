@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
 	public Spawner spawner;
 	public p[] paths = new p[8];
 	public GameObject tower;
-    bool tower1Picked = false, spawnMob1 = false;
+    bool tower1Picked = false, spawnMob1 = false, spawnMob3 = false;
     int counter = 0;
 
 	void Start () {
@@ -37,6 +37,11 @@ public class GameController : MonoBehaviour {
             spawner.spawnOne(paths[0], enemies[1], 2, 1);
             spawnMob1 = false;
         }
+        if(spawnMob3 == true)
+        {
+            spawner.spawnOne(paths[0], enemies[0], 2, 1);
+            spawnMob3 = false;
+        }
         spawner.counter = 0;
     }
 
@@ -48,5 +53,10 @@ public class GameController : MonoBehaviour {
     public void tower1()
     {
         tower1Picked = true;
+    }
+
+    public void spawnMob2()
+    {
+        spawnMob3 = true;
     }
 }
