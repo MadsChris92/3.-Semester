@@ -4,11 +4,10 @@ using System.Collections;
 public class Spawner : MonoBehaviour
 {
 
-	public float timePassed;
+	private float timePassed;
 	public float spawnTime = 1f;
 	public int maxCurrentSpawn = 10;
-	public GameObject enemy;
-	public int counter = 0;
+	private int counter = 0;
 	bool isSpawning;
 	public p path;
 
@@ -37,7 +36,7 @@ public class Spawner : MonoBehaviour
 		spawnTime = spawnRate;
 		timePassed += Time.deltaTime;
 		maxCurrentSpawn = amount;
-        GameObject clone = Instantiate(enemy, transform.position, Quaternion.identity) as GameObject;
+        GameObject clone = Instantiate(enemy, path1.Points[0].position, Quaternion.identity) as GameObject;
         clone.GetComponent<FollowPath>().Move(path1);
         //Debug.Log(counter);
 

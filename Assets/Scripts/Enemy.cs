@@ -2,10 +2,9 @@
 using System.Collections;
 
 public class Enemy : MonoBehaviour {
-	public GameObject enemy;
+    //public GameObject enemy;
+    //public FollowPath path;
     public float health = 100;
-    public FollowPath path;
-	GameObject bullet;
     public EnemyType enemyType;
 
     public enum EnemyType
@@ -15,7 +14,6 @@ public class Enemy : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-    bullet = GameObject.FindGameObjectWithTag ("Bullet");
         if (enemyType == EnemyType.basic)
         {
             health = health * 2;
@@ -23,6 +21,9 @@ public class Enemy : MonoBehaviour {
         if(enemyType == EnemyType.moderat)
         {
             health = health * 3;
+        }
+        if (enemyType == EnemyType.hard) {
+            health = health * 5;
         }
     }
 	

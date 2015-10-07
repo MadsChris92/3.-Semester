@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
 	public GameObject tower;
     bool tower1Picked = false, spawnMob1 = false, spawnMob3 = false;
     int counter = 0;
+    private float timeNext = 0;
 
 	void Start () {
 		spawner = GameObject.Find("Spawner").GetComponent<Spawner>();
@@ -26,12 +27,13 @@ public class GameController : MonoBehaviour {
             tower1Picked = false;
 		}
 		timePassed += Time.deltaTime;
-/*		if (timePassed > 0f && timePassed < 5f) {
-			spawner.spawnOne(paths[0],enemies[0], 4,1);
+		if (timePassed > 0f && timePassed < 5f && timePassed > timeNext+1) {
+			spawner.spawnOne(paths[0],enemies[2], 4,1);
+            timeNext = timePassed;
             return;
 		}
-		spawner.counter = 0;
-        */
+		//spawner.counter = 0;
+        
         if(spawnMob1 == true)
         {
             spawner.spawnOne(paths[0], enemies[0], 2, 1);
@@ -42,7 +44,7 @@ public class GameController : MonoBehaviour {
             spawner.spawnOne(paths[0], enemies[1], 2, 1);
             spawnMob3 = false;
         }
-        spawner.counter = 0;
+        //spawner.counter = 0;
     }
 
     public void spawnMob()
