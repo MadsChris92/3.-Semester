@@ -4,6 +4,7 @@ using System.Collections;
 public class Enemy : MonoBehaviour {
 	public GameObject enemy;
     public float health = 100;
+    public FollowPath path;
 	GameObject bullet;
     public EnemyType enemyType;
 
@@ -14,11 +15,14 @@ public class Enemy : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
- 
     bullet = GameObject.FindGameObjectWithTag ("Bullet");
         if (enemyType == EnemyType.basic)
         {
             health = health * 2;
+        }
+        if(enemyType == EnemyType.moderat)
+        {
+            health = health * 3;
         }
     }
 	
