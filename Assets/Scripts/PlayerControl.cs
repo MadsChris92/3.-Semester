@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour {
     private float movementX, movementY;
-    public float speed = 8;
+    public float speed = 0.05f;
     public GameObject camera;
 	// Use this for initialization
 	void Start () {

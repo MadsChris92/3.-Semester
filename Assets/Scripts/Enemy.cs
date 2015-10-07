@@ -2,14 +2,9 @@
 using System.Collections;
 
 public class Enemy : MonoBehaviour {
-<<<<<<< HEAD
-    //public GameObject enemy;
-    //public FollowPath path;
-=======
 	public GameObject enemy;
     GameObject player;
-    public float speed = 8;
->>>>>>> origin/master
+    public float speed = 0.05f;
     public float health = 100;
     public EnemyType enemyType;
 
@@ -20,12 +15,9 @@ public class Enemy : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-<<<<<<< HEAD
-=======
     
-    bullet = GameObject.FindGameObjectWithTag ("Bullet");
+        //bullet = GameObject.FindGameObjectWithTag ("Bullet");
         
->>>>>>> origin/master
         if (enemyType == EnemyType.basic)
         {
             health = health * 2;
@@ -50,7 +42,7 @@ public class Enemy : MonoBehaviour {
         transform.Translate(Vector3.up * speed);
     }
 
-	void OnCollisionEnter2D(Collision2D c){
+    void OnCollisionEnter2D(Collision2D c){
 		if (c.transform.tag == "Bullet") {
             health = health - 100;
             if (health <= 0)

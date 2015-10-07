@@ -27,11 +27,11 @@ public class GameController : MonoBehaviour {
             tower1Picked = false;
 		}
 		timePassed += Time.deltaTime;
-		if (timePassed > 0f && timePassed < 5f && timePassed > timeNext+1) {
-			spawner.spawnOne(paths[0],enemies[2], 4,1);
+		/*if (timePassed > 0f && timePassed < 5f && timePassed > timeNext+1) {
+			spawner.spawnOne(paths[0],enemies[0], 4,1);
             timeNext = timePassed;
             return;
-		}
+		}*/
 		//spawner.counter = 0;
         
         if(spawnMob1 == true)
