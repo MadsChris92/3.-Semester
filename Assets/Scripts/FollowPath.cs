@@ -11,7 +11,7 @@ public class FollowPath : MonoBehaviour
 
 	public FollowType Type = FollowType.MoveToward;
 	public p Path;
-	public float Speed;
+	public float Speed = 3;
 	public float MaxDistanceToGoal = 0.1f;
 
 	private IEnumerator<Transform>_currentPoint;

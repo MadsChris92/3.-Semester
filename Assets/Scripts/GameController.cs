@@ -39,7 +39,7 @@ public class GameController : MonoBehaviour {
         }
         if(spawnMob3 == true)
         {
-            spawner.spawnOne(paths[0], enemies[0], 2, 1);
+            spawner.spawnOne(paths[0], enemies[1], 2, 1);
             spawnMob3 = false;
         }
         spawner.counter = 0;
