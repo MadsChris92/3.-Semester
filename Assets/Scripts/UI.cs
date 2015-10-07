@@ -13,7 +13,7 @@ public class UI : MonoBehaviour {
 	
 	}
 
-	public void onClick(){
-		Debug.Log ("Clicked!");
+	public void loadLevel(){
+        Application.LoadLevel(0);
 	}
 }
