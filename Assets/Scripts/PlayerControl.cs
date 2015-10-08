@@ -9,13 +9,14 @@ public class PlayerControl : MonoBehaviour {
     public GameObject camera;
     int counter = 0;
     public Transform bulletSpawn;
+    public Animator feet;
     bool isMoving;
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update() {
         //        camera.transform.position.y = 
         //        Vector3 pPos = transform.position;
         camera.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
@@ -25,9 +26,10 @@ public class PlayerControl : MonoBehaviour {
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
 
-            transform.Translate(Vector3.up * speed);
-
-        
+        if (Input.GetAxis("Vertical") > 0) { 
+            transform.Translate(Vector3.up * speed * Input.GetAxis("Vertical"));
+        }
+        feet.SetFloat("Speed", Input.GetAxis("Vertical"));
 
 
 
