@@ -26,7 +26,7 @@ public class PlayerControl : MonoBehaviour {
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
 
-        if (Input.GetAxis("Vertical") > 0) { 
+        if (Input.GetAxis("Vertical") != 0) { 
             transform.Translate(Vector3.up * speed * Input.GetAxis("Vertical"));
         }
         feet.SetFloat("Speed", Input.GetAxis("Vertical"));

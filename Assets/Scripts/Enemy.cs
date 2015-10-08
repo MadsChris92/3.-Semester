@@ -2,12 +2,14 @@
 using System.Collections;
 
 public class Enemy : MonoBehaviour {
-	public GameObject enemy;
     GameObject player;
     public GameObject blood;
     public float speed = 0.05f;
     public float health = 100;
     public EnemyType enemyType;
+    public float decayTime = 5f;
+    private float deadTime = 0f;
+    private bool isDead = false;
 
     public enum EnemyType
     {
@@ -34,8 +36,15 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        player = GameObject.FindGameObjectWithTag("Player");
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed);
+        if (!isDead) {
+            player = GameObject.FindGameObjectWithTag("Player");
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed);
+        } else {
+            deadTime += Time.deltaTime;
+            if (deadTime > decayTime) {
+                Destroy(gameObject);
+            }
+        }
  /*       var pos = player.transform.position;
         var dir = pos - transform.position;
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
@@ -51,7 +60,10 @@ public class Enemy : MonoBehaviour {
             GameObject bloodclone = Instantiate(blood, transform.position, Quaternion.identity) as GameObject;
             if (health <= 0)
             {
-                Destroy(gameObject);
+                isDead = true;
+                GetComponent<BoxCollider2D>().enabled = false;
+                GetComponentInChildren<Animator>().SetBool("isDead", true);
+
             }
 		}
 	}

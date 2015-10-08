@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.35300004, y: 2.69000006, z: 0}
+  m_LocalPosition: {x: -1.9703598, y: .684460163, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
   - {fileID: 432364}
@@ -107,7 +107,7 @@ MonoBehaviour:
   bullet: {fileID: 112754, guid: 2dafda988837f7d4d89452aeeb4e8456, type: 2}
   camera: {fileID: 0}
   bulletSpawn: {fileID: 432364}
-  feet: {fileID: 0}
+  feet: {fileID: 9526360}
 --- !u!212 &21248754
 SpriteRenderer:
   m_ObjectHideFlags: 1
