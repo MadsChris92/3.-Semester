@@ -3,71 +3,36 @@ using System.Collections;
 
 public class Spawner : MonoBehaviour
 {
-
-	private float timePassed;
-	public float spawnTime = 1f;
-	public int maxCurrentSpawn = 10;
-	private int counter = 0;
-	bool isSpawning;
-	public p path;
-
-	public enum SpawnPaths
-	{
-		Clamp,
-		Horizontal,
-		Vertical,
-		ZigZag,
-		Waiting,
-		easyPath
-	}
-	public SpawnPaths pathModes = SpawnPaths.easyPath;
-
-	void Start ()
-	{
-
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-	
-	}
-	public void spawnOne(p path1, GameObject enemy, int amount, float spawnRate){
-		spawnTime = spawnRate;
-		timePassed += Time.deltaTime;
-		maxCurrentSpawn = amount;
-        GameObject clone = Instantiate(enemy, path1.Points[0].position, Quaternion.identity) as GameObject;
-        clone.GetComponent<FollowPath>().Move(path1);
-        //Debug.Log(counter);
-
-        /*if (timePassed > spawnTime && counter < maxCurrentSpawn) {
-			GameObject clone = Instantiate (enemy, transform.position, Quaternion.identity) as GameObject;
-			clone.GetComponent<FollowPath> ().Move (path1);
-			counter++;
-			timePassed = 0;
-		} */
+    public Transform[] spawns;
+    public GameObject[] enemies;
+    int gameEnd = 0;
+    public int spawnRate = 0;
+    bool spawning = false;
+    void Start()
+    {
+        
     }
-	
-	public void spawnTwo(p path1, GameObject enemy1, p path2, GameObject enemy2,int amount, float spawnRate){
-		spawnTime = spawnRate;
-			timePassed += Time.deltaTime;
-		    maxCurrentSpawn = amount;
-			
-			if (timePassed > spawnTime && counter < maxCurrentSpawn) {
 
-			GameObject clone = Instantiate (enemy1, transform.position, Quaternion.identity) as GameObject;
-			clone.GetComponent<FollowPath> ().Move (path1);
-				
-			GameObject clone1 = Instantiate (enemy2, transform.position, Quaternion.identity) as GameObject;
-			clone1.GetComponent<FollowPath> ().Move (path2);
-			counter++;
-
-			timePassed = 0;
-		} else if(counter == maxCurrentSpawn){
-			//counter = 0;
-			//Debug.Log ("fasfga");
-		}
-
-	}
-	
+    void Update()
+    {
+        Debug.Log(gameEnd);
+        gameEnd++;
+        if (gameEnd < 3000)
+        {
+            int randomSpawn = Random.Range(0, 19);
+            int randomEnem = Random.Range(0, 2);
+            spawnRate++;
+            if (spawnRate >= 40)
+            {
+                spawning = true;
+                spawnRate = 0;
+            }
+            if (spawning)
+            {
+                GameObject enemy = Instantiate(enemies[randomEnem], spawns[randomSpawn].transform.position, Quaternion.identity) as GameObject;
+                spawning = false;
+            }
+        }
+        else { }
+    }
 }

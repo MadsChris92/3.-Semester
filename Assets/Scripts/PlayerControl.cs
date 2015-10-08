@@ -4,8 +4,12 @@ using System.Collections;
 public class PlayerControl : MonoBehaviour {
     private float movementX, movementY;
     public float speed = 0.05f;
+    public GameObject bullet;
+    bool isShooting = false;
     public GameObject camera;
-	// Use this for initialization
+    int counter = 0;
+    public Transform bulletSpawn;
+    bool isMoving;
 	void Start () {
 	
 	}
@@ -21,17 +25,26 @@ public class PlayerControl : MonoBehaviour {
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
 
-        transform.Translate(Vector3.up * speed);
-
-        /*
-        if (Input.GetKey("w"))
-        {
             transform.Translate(Vector3.up * speed);
-        }
-        if (Input.GetKey("s"))
+
+        
+
+
+
+        if (Input.GetButton("Fire1"))
         {
-            transform.Translate(Vector3.down * speed / 2);
+            counter++;
+            if(counter >= 10)
+            {
+                isShooting = true;
+                counter = 0;
+            }
+            if (isShooting)
+            {
+                GameObject clone = Instantiate(bullet, bulletSpawn.transform.position, bulletSpawn.rotation) as GameObject;
+                clone.GetComponent<Rigidbody2D>().AddForce(clone.transform.up * 1000);
+                isShooting = false;
+            }
         }
-        */
 	}
 }

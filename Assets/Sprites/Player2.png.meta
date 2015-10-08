@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: da1bb571702f1ef4abba1737bd981293
-timeCreated: 1444224327
+timeCreated: 1444313843
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,7 @@ TextureImporter:
     21300010: Player2_5
     21300012: Player2_6
     21300014: Player2_7
+    21300016: blood
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -86,7 +87,7 @@ TextureImporter:
         width: 11
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Player2_3
       rect:
@@ -126,7 +127,7 @@ TextureImporter:
         width: 11
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Player2_7
       rect:
@@ -136,7 +137,17 @@ TextureImporter:
         width: 11
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blood
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 125
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
