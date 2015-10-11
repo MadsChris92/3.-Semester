@@ -8,6 +8,7 @@ TagManager:
   - Base
   - Spawner
   - Bullet
+  - Level
   layers:
   - Default
   - TransparentFX

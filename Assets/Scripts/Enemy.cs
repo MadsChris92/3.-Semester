@@ -7,7 +7,8 @@ public class Enemy : MonoBehaviour {
     public float speed = 0.05f;
     public float health = 100;
     public EnemyType enemyType;
-    public float decayTime = 5f;
+    public bool decay = true;
+    public float decayTime = 60f;
     private float deadTime = 0f;
     private bool isDead = false;
 
@@ -39,9 +40,14 @@ public class Enemy : MonoBehaviour {
         if (!isDead) {
             player = GameObject.FindGameObjectWithTag("Player");
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed);
+            if(player.transform.position.x > transform.position.x) {
+                transform.localScale = new Vector3( 1, 1, 1);
+            } else {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
         } else {
             deadTime += Time.deltaTime;
-            if (deadTime > decayTime) {
+            if (deadTime > decayTime && decay) {
                 Destroy(gameObject);
             }
         }

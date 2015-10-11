@@ -14,7 +14,8 @@ public class GameController : MonoBehaviour {
     private float timeNext = 0;
 
 	void Start () {
-		spawner = GameObject.Find("Spawner").GetComponent<Spawner>();
+        if(spawner == null)
+		    spawner = GameObject.Find("Spawner").GetComponent<Spawner>();
 	}
 	
 	// Update is called once per frame

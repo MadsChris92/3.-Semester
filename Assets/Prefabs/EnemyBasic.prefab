@@ -43,7 +43,7 @@ Transform:
   m_GameObject: {fileID: 182666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 89.8397064, y: 118.741783, z: 1}
+  m_LocalScale: {x: 16, y: 16, z: 1}
   m_Children: []
   m_Father: {fileID: 470614}
   m_RootOrder: 0
@@ -54,8 +54,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.92999983, y: -3.01999998, z: 0}
-  m_LocalScale: {x: .178094968, y: .134746164, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 439496}
   m_Father: {fileID: 0}
@@ -86,9 +86,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .0167478751, y: .412189126}
+  m_Offset: {x: -.05950737, y: -.0199203491}
   serializedVersion: 2
-  m_Size: {x: 2.49231577, y: 5.63626099}
+  m_Size: {x: .865546227, y: 1.51850605}
 --- !u!95 &9511260
 Animator:
   serializedVersion: 3
@@ -121,7 +121,8 @@ MonoBehaviour:
   speed: .0199999996
   health: 100
   enemyType: 0
-  decayTime: 5
+  decay: 1
+  decayTime: 60
 --- !u!212 &21287410
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -192,6 +193,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_AngularDrag
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: decay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: decayTime
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

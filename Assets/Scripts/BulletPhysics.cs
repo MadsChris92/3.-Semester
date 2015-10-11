@@ -16,5 +16,10 @@ public class BulletPhysics : MonoBehaviour {
 		if (c.transform.tag == "Enemy") {
 			Destroy(gameObject);
 		}
-	}
+    }
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.transform.tag == "Level") {
+            Destroy(gameObject);
+        }
+    }
 }
