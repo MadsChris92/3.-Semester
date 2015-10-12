@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f57845cd767df41479eb1bb0efae3ff6
-timeCreated: 1444529555
+timeCreated: 1444684110
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,6 +16,18 @@ TextureImporter:
     21300018: BigKnightDie_9
     21300020: BigKnightDie_10
     21300022: BigKnightDie_11
+    21300024: BightDie_0
+    21300026: BightDie_1
+    21300028: BightDie_2
+    21300030: BightDie_3
+    21300032: BightDie_4
+    21300034: BightDie_5
+    21300036: BightDie_6
+    21300038: BightDie_7
+    21300040: BightDie_8
+    21300042: BightDie_9
+    21300044: BightDie_10
+    21300046: BightDie_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -62,125 +74,125 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: BigKnightDie_0
+    - name: BightDie_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BigKnightDie_1
+    - name: BightDie_1
       rect:
         serializedVersion: 2
         x: 23
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BigKnightDie_2
+    - name: BightDie_2
       rect:
         serializedVersion: 2
         x: 46
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BigKnightDie_3
+    - name: BightDie_3
       rect:
         serializedVersion: 2
         x: 69
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BigKnightDie_4
+    - name: BightDie_4
       rect:
         serializedVersion: 2
         x: 92
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BigKnightDie_5
+    - name: BightDie_5
       rect:
         serializedVersion: 2
         x: 115
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BigKnightDie_6
+    - name: BightDie_6
       rect:
         serializedVersion: 2
         x: 138
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BigKnightDie_7
+    - name: BightDie_7
       rect:
         serializedVersion: 2
         x: 161
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BigKnightDie_8
+    - name: BightDie_8
       rect:
         serializedVersion: 2
         x: 184
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BigKnightDie_9
+    - name: BightDie_9
       rect:
         serializedVersion: 2
         x: 207
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BigKnightDie_10
+    - name: BightDie_10
       rect:
         serializedVersion: 2
         x: 230
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: BigKnightDie_11
+    - name: BightDie_11
       rect:
         serializedVersion: 2
         x: 253
         y: 0
         width: 23
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .360000014, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

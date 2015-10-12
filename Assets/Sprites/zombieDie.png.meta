@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a4c9f1f33c9efce41bc087830d7a3c82
-timeCreated: 1444338989
+timeCreated: 1444683972
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -62,8 +62,8 @@ TextureImporter:
         y: 0
         width: 20
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .370000005, y: .200000003}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: zombieDie_1
       rect:
@@ -72,8 +72,8 @@ TextureImporter:
         y: 0
         width: 20
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .370000005, y: .200000003}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: zombieDie_2
       rect:
@@ -82,8 +82,8 @@ TextureImporter:
         y: 0
         width: 20
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .370000005, y: .200000003}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: zombieDie_3
       rect:
@@ -92,8 +92,8 @@ TextureImporter:
         y: 0
         width: 20
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .370000005, y: .200000003}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: zombieDie_4
       rect:
@@ -102,8 +102,8 @@ TextureImporter:
         y: 0
         width: 20
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .370000005, y: .200000003}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

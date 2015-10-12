@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 76a018006217c7848a85d37ba5d52dcb
-timeCreated: 1444341107
+timeCreated: 1444683379
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -68,8 +68,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .600000024, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KnightDie_1
       rect:
@@ -78,8 +78,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .600000024, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KnightDie_2
       rect:
@@ -88,8 +88,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .600000024, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KnightDie_3
       rect:
@@ -98,8 +98,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .600000024, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KnightDie_4
       rect:
@@ -108,8 +108,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .600000024, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KnightDie_5
       rect:
@@ -118,8 +118,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .600000024, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KnightDie_6
       rect:
@@ -128,8 +128,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .600000024, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KnightDie_7
       rect:
@@ -138,8 +138,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .600000024, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KnightDie_8
       rect:
@@ -148,8 +148,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .600000024, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KnightDie_9
       rect:
@@ -158,8 +158,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .600000024, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KnightDie_10
       rect:
@@ -168,8 +168,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .600000024, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

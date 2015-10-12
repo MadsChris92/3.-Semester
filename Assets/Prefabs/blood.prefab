@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 472144}
   - 212: {fileID: 21212458}
-  - 50: {fileID: 5059098}
+  - 95: {fileID: 9511808}
   m_Layer: 0
   m_Name: blood
   m_TagString: Untagged
@@ -24,27 +24,28 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.09300005, y: 1.19000006, z: 0}
+  m_LocalPosition: {x: -3.41469026, y: -.45980072, z: 0}
   m_LocalScale: {x: 17.0807781, y: 13.4184265, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5059098
-Rigidbody2D:
-  serializedVersion: 2
+--- !u!95 &9511808
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106996}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d9b9806dc88dc340a110f7119e7b6a7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &21212458
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -5,11 +5,11 @@ public class PlayerControl : MonoBehaviour {
     private float movementX, movementY;
     public float speed = 0.05f;
     public GameObject bullet;
-    bool isShooting = false;
     public GameObject camera;
-    int counter = 0;
     public Transform bulletSpawn;
     public Animator feet;
+    bool isShooting = false;
+    float shootTime = 0;
     bool isMoving;
 	void Start () {
 	
@@ -35,11 +35,10 @@ public class PlayerControl : MonoBehaviour {
 
         if (Input.GetButton("Fire1"))
         {
-            counter++;
-            if(counter >= 10)
+            if(Time.time > shootTime + 0.3)
             {
+                shootTime = Time.time;
                 isShooting = true;
-                counter = 0;
             }
             if (isShooting)
             {

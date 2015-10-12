@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4f63d20411cfcff41853dce5e01f8372
-timeCreated: 1444226658
+timeCreated: 1444684032
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -61,8 +61,8 @@ TextureImporter:
         y: 5
         width: 20
         height: 15
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .34262532, y: .0612586327}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bight_1
       rect:
@@ -71,8 +71,8 @@ TextureImporter:
         y: 4
         width: 20
         height: 15
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .337856472, y: .061258506}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bight_2
       rect:
@@ -81,8 +81,8 @@ TextureImporter:
         y: 4
         width: 20
         height: 15
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .347394168, y: .0548999459}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bight_3
       rect:
@@ -91,8 +91,8 @@ TextureImporter:
         y: 4
         width: 20
         height: 15
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .356932074, y: .0739757568}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

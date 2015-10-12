@@ -19,7 +19,7 @@ public class Canon : MonoBehaviour {
         LookAtEnemy();
         if (count > fireDelay && findClosestEnemy() != null) {
 			GameObject clone = Instantiate(bullet, bulletSpawn.transform.position, barrel.transform.rotation) as GameObject;
-			clone.GetComponent<Rigidbody2D>().AddForce(barrel.transform.up * 1000);
+            clone.GetComponent<Rigidbody2D>().AddForce(barrel.transform.up * 1000);
 			count = 0;
             barrel.GetComponent<Animator>().SetTrigger("Fire");
 		}

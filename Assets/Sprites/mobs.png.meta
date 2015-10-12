@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8a1dce9c44227c54fbd24684fae14a51
-timeCreated: 1444163237
+timeCreated: 1444683695
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -69,8 +69,8 @@ TextureImporter:
         y: 28
         width: 8
         height: 11
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .400000006, y: .100000001}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mobs_1
       rect:
@@ -79,8 +79,8 @@ TextureImporter:
         y: 28
         width: 8
         height: 11
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .400000006, y: .100000001}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mobs_2
       rect:
@@ -89,8 +89,8 @@ TextureImporter:
         y: 28
         width: 8
         height: 11
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .400000006, y: .100000001}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mobs_3
       rect:
@@ -99,8 +99,8 @@ TextureImporter:
         y: 28
         width: 8
         height: 11
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .400000006, y: .100000001}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mobs_4
       rect:
@@ -149,8 +149,8 @@ TextureImporter:
         y: 2
         width: 10
         height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .400000006, y: .0799999982}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mobs_9
       rect:
@@ -159,8 +159,8 @@ TextureImporter:
         y: 2
         width: 10
         height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .400000006, y: .0799999982}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mobs_10
       rect:
@@ -169,8 +169,8 @@ TextureImporter:
         y: 2
         width: 10
         height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .400000006, y: .0799999982}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mobs_11
       rect:
@@ -179,8 +179,8 @@ TextureImporter:
         y: 2
         width: 10
         height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .400000006, y: .0799999982}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
