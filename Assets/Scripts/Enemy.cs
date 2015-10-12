@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour {
     public bool decay = true;
     public float decayTime = 60f;
     private float deadTime = 0f;
-    private bool isDead = false;
+    private bool dead = false;
 
     public enum EnemyType
     {
@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (!isDead) {
+        if (!dead) {
             player = GameObject.FindGameObjectWithTag("Player");
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed);
             if(player.transform.position.x > transform.position.x) {
@@ -61,14 +61,17 @@ public class Enemy : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D c){
-		if (c.transform.tag == "Bullet") {
+		if (c.transform.tag == "Bullet" && !dead) {
+            Destroy(c.gameObject);
             health = health - 100;
             GameObject bloodclone = Instantiate(blood, transform.position, Quaternion.identity) as GameObject;
             if (health <= 0)
             {
-                isDead = true;
+                dead = true;
                 GetComponent<BoxCollider2D>().enabled = false;
                 GetComponentInChildren<Animator>().SetBool("isDead", true);
+                gameObject.tag = "Corpse";
+                GetComponentInChildren<SpriteRenderer>().sortingLayerName = "Corpses";
 
             }
 		}

@@ -30,7 +30,7 @@ GameObject:
   - 95: {fileID: 9511260}
   m_Layer: 0
   m_Name: Knight
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,6 +209,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: decayTime
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -9,6 +9,7 @@ TagManager:
   - Spawner
   - Bullet
   - Level
+  - Corpse
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - 
   - 
   - Towers
-  - 
+  - Bullets
   - 
   - 
   - 
@@ -48,6 +49,9 @@ TagManager:
     locked: 0
   - name: Blood
     uniqueID: 4102573797
+    locked: 0
+  - name: Corpses
+    uniqueID: 1635497937
     locked: 0
   - name: Canon
     uniqueID: 1981471363

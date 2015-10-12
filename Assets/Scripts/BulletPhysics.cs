@@ -12,11 +12,11 @@ public class BulletPhysics : MonoBehaviour {
 	void Update () {
 	
 	}
-	void OnCollisionEnter2D(Collision2D c){
+/*	void OnCollisionEnter2D(Collision2D c){
 		if (c.transform.tag == "Enemy") {
 			Destroy(gameObject);
 		}
-    }
+    }*/
     void OnTriggerExit2D(Collider2D other) {
         if (other.transform.tag == "Level") {
             Destroy(gameObject);
