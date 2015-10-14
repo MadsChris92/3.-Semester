@@ -15,11 +15,8 @@ public class PlayerControl : MonoBehaviour {
 	
 	}
 
-    // Update is called once per frame
     void Update() {
-        //        camera.transform.position.y = 
-        //        Vector3 pPos = transform.position;
-        camera.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+        camera.transform.position = new Vector3(transform.position.x, transform.position.y, -10); // husk at sætte begrænsinger på dette, så kameraet ikke kan bevæge sig ud af skærmen
         Vector3 posC = Camera.main.WorldToScreenPoint(transform.position);
         var pos = Camera.main.WorldToScreenPoint(transform.position);
         var dir = Input.mousePosition - pos;
