@@ -45,6 +45,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\2DLightAssets\Scripts\2DLight\DynamicLight.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\Helpers\interface_touch.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\Helpers\interface_touch2.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\rotate.cs" />
      <Compile Include="Assets\Scripts\BulletPhysics.cs" />
      <Compile Include="Assets\Scripts\Canon.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
@@ -54,11 +58,22 @@
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\UI.cs" />
      <Compile Include="Assets\Scripts\p.cs" />
+     <None Include="Assets\2DLightAssets\Shaders\Gradient-NoTexture-Radial-SingleColor-ToTransparent-RegularUV-AlphaBlend.shader" />
+     <None Include="Assets\2DLightAssets\Shaders\NoTexture.shader" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="pseudoSinCos">
+ <HintPath>C:/Users/Mads/Documents/GitHub/3.-Semester/Assets/2DLightAssets/Scripts/Helpers/pseudoSinCos.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
