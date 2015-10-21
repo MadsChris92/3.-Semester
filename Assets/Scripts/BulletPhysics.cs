@@ -3,20 +3,31 @@ using System.Collections;
 
 public class BulletPhysics : MonoBehaviour {
 
-	// Use this for initialization
+    public BulletType bulletType;
+    float damage;
+
+    public enum BulletType
+    {
+        standard, laser
+    }
 	void Start () {
-	
-	}
+        if (bulletType == BulletType.standard)
+        {
+            damage = 100;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
-/*	void OnCollisionEnter2D(Collision2D c){
-		if (c.transform.tag == "Enemy") {
-			Destroy(gameObject);
-		}
-    }*/
+
+    
+    }
+
+    public float getDamage()
+    {
+        return damage;
+    }
+
     void OnTriggerExit2D(Collider2D other) {
         if (other.transform.tag == "Level") {
             Destroy(gameObject);

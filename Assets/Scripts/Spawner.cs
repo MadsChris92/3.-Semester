@@ -16,7 +16,6 @@ public class Spawner : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(gameEnd);
         gameEnd++;
         if (gameEnd < 2000)
         {

@@ -4,6 +4,8 @@ using System.Collections;
 public class Enemy : MonoBehaviour {
     GameObject player;
     public GameObject blood;
+    BulletPhysics bulPhys;
+    GameObject bullet;
     public float speed = 0.05f;
     public float health = 100;
     public EnemyType enemyType;
@@ -19,9 +21,11 @@ public class Enemy : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-    
-        //bullet = GameObject.FindGameObjectWithTag ("Bullet");
+
         
+    
+        
+
         if (enemyType == EnemyType.basic)
         {
             health = health * 2;
@@ -37,6 +41,8 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+       
+
         if (!dead) {
             player = GameObject.FindGameObjectWithTag("Player");
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed);
@@ -61,9 +67,12 @@ public class Enemy : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D c){
-		if (c.transform.tag == "Bullet" && !dead) {
+       
+        if (c.transform.tag == "Bullet" && !dead) {
+            bulPhys = c.gameObject.GetComponent<BulletPhysics>();
+            Debug.Log(bulPhys.getDamage());
             Destroy(c.gameObject);
-            health = health - 100;
+            health = health - bulPhys.getDamage();
             GameObject bloodclone = Instantiate(blood, transform.position, Quaternion.identity) as GameObject;
             if (health <= 0)
             {

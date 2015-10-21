@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour {
 	float timePassed;
 	public Spawner spawner;
 	public p[] paths = new p[8];
-	public GameObject tower;
+	public GameObject[] towers = new GameObject[2];
     bool tower1Picked = false, spawnMob1 = false, spawnMob3 = false;
     int counter = 0;
     private float timeNext = 0;
@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour {
 			Vector3 pos1 = Input.mousePosition;
 			pos1.z = 10;
 			Vector3 pos = Camera.main.ScreenToWorldPoint(pos1);
-			GameObject clone = Instantiate(tower, pos, transform.rotation)as GameObject;
+			GameObject clone = Instantiate(towers[0], pos, transform.rotation)as GameObject;
             tower1Picked = false;
 		}
 		timePassed += Time.deltaTime;
@@ -37,7 +37,7 @@ public class GameController : MonoBehaviour {
         
         if(spawnMob1 == true)
         {
-   
+            
         }
         if(spawnMob3 == true)
         {

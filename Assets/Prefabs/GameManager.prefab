@@ -46,7 +46,8 @@ MonoBehaviour:
   spawner: {fileID: 0}
   paths:
   - {fileID: 0}
-  tower: {fileID: 130642, guid: 34da23b4d4f2d9941b2d4cfe05e4a019, type: 2}
+  towers:
+  - {fileID: 130642, guid: 34da23b4d4f2d9941b2d4cfe05e4a019, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
