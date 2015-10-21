@@ -6,6 +6,7 @@ public class Canon : MonoBehaviour {
 	public Transform bulletSpawn;
 	public GameObject barrel;
     public float fireDelay = 2.0f;
+    public float range = 50;
 	GameObject[] enemies;
 	float count;
 	
@@ -27,7 +28,7 @@ public class Canon : MonoBehaviour {
 
 	GameObject findClosestEnemy(){
 		enemies = GameObject.FindGameObjectsWithTag ("Enemy");
-		float dist = Mathf.Infinity;
+		float dist = range;
         GameObject closest = null;
         foreach (GameObject enemy in enemies) {
 			Vector2 diff = enemy.transform.position - transform.position;
