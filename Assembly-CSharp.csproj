@@ -73,7 +73,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="pseudoSinCos">
- <HintPath>C:/Users/Mads/Documents/GitHub/3.-Semester/Assets/2DLightAssets/Scripts/Helpers/pseudoSinCos.dll</HintPath>
+ <HintPath>C:/Users/marti/UnityProjects/3.-Semester/Assets/2DLightAssets/Scripts/Helpers/pseudoSinCos.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
