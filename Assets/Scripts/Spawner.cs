@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour
     public GameObject[] enemies;
     int gameEnd = 0;
     int spawnRate = 0;
+    public int SpawnRate = 0;
     bool spawning = false;
     void Start()
     {
@@ -17,12 +18,12 @@ public class Spawner : MonoBehaviour
     {
         Debug.Log(gameEnd);
         gameEnd++;
-        if (gameEnd < 3000)
+        if (gameEnd < 2000)
         {
             int randomSpawn = Random.Range(0, spawns.Length);
             int randomEnem = Random.Range(0, enemies.Length);
             spawnRate++;
-            if (spawnRate >= 100)
+            if (spawnRate >= SpawnRate)
             {
                 spawning = true;
                 spawnRate = 0;

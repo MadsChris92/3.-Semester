@@ -89,42 +89,6 @@ NavMeshSettings:
 Transform:
   m_PrefabParentObject: {fileID: 442950, guid: 91e1c81df5b042a4b9debbc916f794b3, type: 2}
   m_PrefabInternal: {fileID: 1887761083}
---- !u!1 &127182868 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 124304, guid: def599647c85e2d43928f0ca1dcc689d, type: 2}
-  m_PrefabInternal: {fileID: 2021009612}
---- !u!108 &127182869
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 127182868}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_Type: 2
-  m_Color: {r: .862068892, g: 1, b: 0, a: 1}
-  m_Intensity: .649999976
-  m_Range: 20
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_NormalBias: .400000006
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_BounceIntensity: 2.75
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_AreaSize: {x: 1, y: 1}
 --- !u!4 &416311616 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423954, guid: 91e1c81df5b042a4b9debbc916f794b3, type: 2}
@@ -260,6 +224,10 @@ Prefab:
       propertyPath: spawns.Array.data[19]
       value: 
       objectReference: {fileID: 1887761085}
+    - target: {fileID: 11465780, guid: 2e09dedc5e6246142a3cd7021f2ab0a6, type: 2}
+      propertyPath: SpawnRate
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e09dedc5e6246142a3cd7021f2ab0a6, type: 2}
   m_IsPrefabParent: 0
@@ -321,7 +289,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 99.1999969
+  field of view: 66
   orthographic: 0
   orthographic size: 7.45507765
   m_Depth: -1
