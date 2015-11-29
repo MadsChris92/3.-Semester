@@ -16,7 +16,7 @@ public class PlayerControl : MonoBehaviour {
 	}
 
     void Update() {
-        camera.transform.position = new Vector3(transform.position.x, transform.position.y, -10); // husk at sætte begrænsinger på dette, så kameraet ikke kan bevæge sig ud af skærmen
+        camera.transform.position = new Vector3(transform.position.x, transform.position.y, -20); // husk at sætte begrænsinger på dette, så kameraet ikke kan bevæge sig ud af skærmen
         Vector3 posC = Camera.main.WorldToScreenPoint(transform.position);
         var pos = Camera.main.WorldToScreenPoint(transform.position);
         var dir = Input.mousePosition - pos;
